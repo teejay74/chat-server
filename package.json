@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start server.js --watch --ignore-watch='node_modules'",
-    "stop": "pm2 stop server.js"
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
   },
   "repository": {
     "type": "git",
