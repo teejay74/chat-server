@@ -101,7 +101,7 @@ wsServer.on("connection", (ws) => {
     [...wsServer.clients]
       .filter((o) => o.readyState === WebSocket.OPEN)
       .forEach((o) =>
-        o.send(JSON.stringify({ type: "disconnect", data: `${delUser} вышел` }))
+        o.send(JSON.stringify({ type: "disconnect", data: `${removeUser} вышел` }))
       );
     ws.close();
   });
