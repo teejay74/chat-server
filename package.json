@@ -1,0 +1,34 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start server.js --watch --ignore-watch='node_modules'",
+    "stop": "pm2 stop server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teejay74/chat-server"
+  },
+  "author": "coursar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teejay74/chat-server/issues"
+  },
+  "homepage": "https://github.com/teejay74/chat-server#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "eslint": "^7.17.0",
+    "forever": "^3.0.2",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "pm2": "^4.5.1",
+    "uuid": "^8.3.1",
+    "ws": "^7.4.2"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
