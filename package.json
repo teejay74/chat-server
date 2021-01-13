@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/teejay74/chat-server#readme",
   "dependencies": {
-    "@koa/cors": "^3.1.0",
     "eslint": "^7.17.0",
     "forever": "^3.0.2",
     "koa": "^2.13.0",
